@@ -9,7 +9,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            ProductManager product = new ProductManager( new InMemoryProductDal());
+            CarManager product = new CarManager( new InMemoryProductDal());
             Car car1 = new Car { Id = 1, BrandId=3,ColorId=85, DailyPrice=950, ModelYear=2018, Description="Rang Rover Sport" };
             Car x = new Car();
             Car car2 = new Car();
@@ -21,10 +21,7 @@ namespace ConsoleUI
                 Console.WriteLine(car.Description);
             }
 
-            foreach (var car in product.GetById(2))
-            {
-                Console.WriteLine(car.BrandId+" Numaralı Markaya Ait Tanım:"+car.Description);
-            }
+
 
          
             
