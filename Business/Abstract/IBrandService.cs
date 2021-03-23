@@ -5,9 +5,11 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    interface IBrandService
+    public interface IBrandService
     {
         void Add(Brand brand);
+        void Delete(Brand brand);
+        void Update(Brand brand);
 
     }
 }
